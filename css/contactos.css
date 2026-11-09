@@ -1,0 +1,250 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #10051F, #240046);
+    color: #F3E8FF;
+}
+
+
+header {
+    position: relative;
+    text-align: center;
+    padding: 25px 15px;
+    background-color: #240046;
+    color: white;
+    border-bottom: 2px solid #7C3AED;
+}
+
+header img {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 65px;
+    height: 75px;
+    object-fit: contain;
+}
+
+header h1 {
+    letter-spacing: 3px;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px;
+    background-color: #5B21B6;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 9px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #3B0764;
+}
+
+
+.pagina-contactos {
+    flex: 1;
+    width: 100%;
+    padding: 35px 20px;
+}
+
+
+.presentacion-contactos {
+    max-width: 850px;
+    margin: 0 auto 30px;
+    padding: 25px;
+    text-align: center;
+    background-color: #200038;
+    border: 1px solid #7C3AED;
+    border-radius: 16px;
+}
+
+.subtitulo {
+    color: #C4B5FD;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.presentacion-contactos h2 {
+    color: white;
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.presentacion-contactos p {
+    color: #E9D5FF;
+}
+
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
+.informacion-contacto {
+    flex: 1 1 260px;
+    padding: 28px;
+    background: linear-gradient(160deg, #3B0764, #200038);
+    border: 1px solid #7C3AED;
+    border-radius: 16px;
+}
+
+.informacion-contacto h3,
+.formulario-contenedor h3 {
+    color: #E9D5FF;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.informacion-contacto p {
+    line-height: 1.8;
+}
+
+.dato-contacto {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.dato-contacto span {
+    color: #C4B5FD;
+    font-size: 24px;
+}
+
+
+.formulario-contenedor {
+    flex: 1 1 380px;
+    padding: 28px;
+    background-color: #200038;
+    border: 1px solid #7C3AED;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario-contacto label {
+    color: #E9D5FF;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #7C3AED;
+    border-radius: 8px;
+    background-color: #F3E8FF;
+    color: #240046;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: 2px solid #C4B5FD;
+    border-color: #C4B5FD;
+}
+
+.formulario-contacto textarea {
+    resize: vertical;
+}
+
+.formulario-contacto button {
+    margin-top: 12px;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #7C3AED, #A855F7);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.formulario-contacto button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(168, 85, 247, 0.35);
+}
+
+
+footer {
+    margin-top: auto;
+    padding: 18px;
+    text-align: center;
+    background-color: #240046;
+    color: white;
+    border-top: 1px solid #7C3AED;
+}
+
+
+@media (max-width: 650px) {
+    header h1 {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    header img {
+        width: 45px;
+        height: 55px;
+        left: 8px;
+        top: 12px;
+    }
+
+    .pagina-contactos {
+        padding: 20px 12px;
+    }
+
+    .presentacion-contactos h2 {
+        font-size: 27px;
+    }
+
+    .contenedor-contacto {
+        flex-direction: column;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+    }
+}

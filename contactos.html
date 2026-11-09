@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contactos - WITCH ESSENCE</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/contactos.css">
+</head>
+
+<body>
+
+    
+    <header>
+        <img src="iconos/LOGO.jpeg"
+             alt="Logo WITCH ESSENCE"
+             width="80"
+             height="100">
+
+        <h1>WITCH ESSENCE</h1>
+        <p>El arte de elegir tu esencia</p>
+    </header>
+
+    
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contactos.html" class="active">Contactos</a>
+    </nav>
+
+   
+    <main class="pagina-contactos">
+
+        <section class="presentacion-contactos">
+            <p class="subtitulo">ESTAMOS PARA TI</p>
+
+            <h2>Contáctanos</h2>
+
+            <p>
+                ¿Buscas tu fragancia ideal?
+                Escríbenos y con gusto te atenderemos.
+            </p>
+        </section>
+
+        <section class="contenedor-contacto">
+
+            
+            <article class="informacion-contacto">
+                <h3>Conversemos</h3>
+
+                <p>
+                    En WITCH ESSENCE queremos ayudarte
+                    a encontrar una fragancia que refleje
+                    tu personalidad.
+                </p>
+
+                <div class="dato-contacto">
+                    <span>✉</span>
+                    <p>Envíanos tus consultas mediante el formulario.</p>
+                </div>
+
+                <div class="dato-contacto">
+                    <span>✦</span>
+                    <p>Estamos aquí para orientarte sobre nuestros productos.</p>
+                </div>
+            </article>
+
+            
+            <article class="formulario-contenedor">
+                <h3>Envíanos un mensaje</h3>
+
+                <form class="formulario-contacto"
+                      action="#"
+                      method="get">
+
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                        required>
+
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com"
+                        required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="Tu número de teléfono">
+
+                    <label for="asunto">Asunto</label>
+                    <input
+                        type="text"
+                        id="asunto"
+                        name="asunto"
+                        placeholder="Motivo de tu consulta"
+                        required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        placeholder="Escribe tu mensaje aquí..."
+                        required></textarea>
+
+                    <button type="submit">
+                        Enviar mensaje
+                    </button>
+
+                </form>
+            </article>
+
+        </section>
+
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2026 Diego Suntaxi</p>
+    </footer>
+
+</body>
+</html>

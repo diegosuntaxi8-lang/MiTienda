@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - WITCH ESSENCE</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/productos.css">
+
+    <script type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+    </script>
+</head>
+<body>
+
+<header>
+    <img src="iconos/LOGO.jpeg"
+         alt="Logo WITCH ESSENCE"
+         width="80" height="100">
+    <h1>WITCH ESSENCE</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html" class="active">Productos</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="contactos.html">Contactos</a>
+</nav>
+
+<main class="contenido-pagina">
+    <h2>Nuestros perfumes</h2>
+    <p>Descubre nuestra colección de fragancias.</p>
+
+    <div class="catalogo">
+
+        <article class="producto">
+            <model-viewer
+                src="3D/midnight_poison_3d.glb"
+                alt="Perfume Midnight Poison en 3D"
+                camera-controls
+                disable-zoom
+                shadow-intensity="1"
+                touch-action="pan-y"
+                camera-orbit="0deg 90deg 105%"
+                camera-target="auto auto auto"
+                interaction-prompt="none"
+                environment-image="neutral"
+                class="perfume-3d">
+            </model-viewer>
+
+            <h3>Midnight Poison</h3>
+            <p>Una fragancia elegante y sofisticada.</p>
+            <p class="precio">$25.00</p>
+        </article>
+
+        <article class="producto">
+            <model-viewer
+                src="3D/chanel_realista.glb"
+                alt="Perfume Chanel en 3D"
+                camera-controls
+                disable-zoom
+                shadow-intensity="1"
+                touch-action="pan-y"
+                camera-orbit="0deg 90deg 105%"
+                camera-target="auto auto auto"
+                interaction-prompt="none"
+                environment-image="neutral"
+                class="perfume-3d">
+            </model-viewer>
+
+            <h3>Perfume Chanel</h3>
+            <p>Una fragancia clásica y refinada.</p>
+            <p class="precio">$30.00</p>
+        </article>
+
+        <article class="producto">
+            <model-viewer
+                src="3D/floral_realista.glb"
+                alt="Fragancia floral en 3D"
+                camera-controls
+                disable-zoom
+                shadow-intensity="1"
+                touch-action="pan-y"
+                camera-orbit="0deg 90deg 105%"
+                camera-target="auto auto auto"
+                interaction-prompt="none"
+                environment-image="neutral"
+                class="perfume-3d">
+            </model-viewer>
+
+            <h3>Fragancia floral</h3>
+            <p>Un aroma delicado para cada ocasión.</p>
+            <p class="precio">$28.00</p>
+        </article>
+
+        <article class="producto">
+            <model-viewer
+                src="3D/shalimar_realista.glb"
+                alt="Perfume Shalimar en 3D"
+                camera-controls
+                disable-zoom
+                shadow-intensity="1"
+                touch-action="pan-y"
+                camera-orbit="0deg 90deg 105%"
+                camera-target="auto auto auto"
+                interaction-prompt="none"
+                environment-image="neutral"
+                class="perfume-3d">
+            </model-viewer>
+
+            <h3>Shalimar</h3>
+            <p>Una fragancia de estilo clásico.</p>
+            <p class="precio">$35.00</p>
+        </article>
+
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Diego Suntaxi</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Servicios - WITCH ESSENCE</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/servicios.css">
+
+    <script type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <img src="iconos/LOGO.jpeg"
+             alt="Logo WITCH ESSENCE"
+             width="80"
+             height="100">
+
+        <h1>WITCH ESSENCE</h1>
+        <p>El arte de elegir tu esencia</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="servicios.html" class="active">Servicios</a>
+        <a href="contactos.html">Contactos</a>
+    </nav>
+
+    <main class="pagina-servicios">
+
+        <section class="presentacion-servicios">
+            <p class="subtitulo">EXPERIENCIA Y ELEGANCIA</p>
+
+            <h2>Nuestros servicios</h2>
+
+            <p>
+                En WITCH ESSENCE te ayudamos a encontrar
+                la fragancia ideal para cada ocasión.
+            </p>
+        </section>
+
+        <section class="seccion-wiz">
+
+            <div class="contenido-qr">
+
+                <p class="subtitulo">DESCUBRE TU MAGIA</p>
+
+                <h2>¡Escanea y descubre nuestra esencia!</h2>
+
+                <div class="contenedor-qr">
+                    <img
+                        src="imagenes/qr.png"
+                        alt="Código QR de WITCH ESSENCE"
+                        class="imagen-qr">
+                </div>
+
+                <p class="indicacion-qr">
+                    Escanea el código QR con tu celular.
+                </p>
+
+            </div>
+
+            <div class="contenedor-wiz">
+
+                <model-viewer
+                    id="modelo-wiz"
+                    src="Animacion/Wiz_Animada.glb"
+                    alt="Wiz, personaje animado de WITCH ESSENCE"
+                    camera-controls
+                    auto-rotate
+                    autoplay
+                    animation-crossfade-duration="0"
+                    shadow-intensity="0.5"
+                    exposure="1"
+                    camera-orbit="0deg 90deg auto"
+                    camera-target="auto auto auto"
+                    interaction-prompt="none">
+                </model-viewer>
+
+            </div>
+
+        </section>
+
+        <section class="lista-servicios" id="lista-servicios">
+
+            <article class="tarjeta-servicio">
+                <img src="imagenes/Asesoria.png"
+                     alt="Colección de perfumes para asesoría">
+
+                <h3>Asesoría en fragancias</h3>
+
+                <p>
+                    Te ayudamos a elegir perfumes según
+                    tus gustos y preferencias.
+                </p>
+            </article>
+
+            <article class="tarjeta-servicio">
+                <img src="imagenes/Regalo.png"
+                     alt="Perfume para regalo">
+
+                <h3>Regalos especiales</h3>
+
+                <p>
+                    Encuentra perfumes para sorprender
+                    a esa persona especial.
+                </p>
+            </article>
+
+            <article class="tarjeta-servicio">
+                <img src="iconos/perfume.png"
+                     alt="Ilustración de un perfume">
+
+                <h3>Recomendación de fragancias</h3>
+
+                <p>
+                    Descubre aromas para acompañarte
+                    en tus momentos especiales.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Diego Suntaxi</p>
+    </footer>
+
+    <script>
+        const wiz = document.querySelector("#modelo-wiz");
+
+        wiz.addEventListener("load", () => {
+            if (wiz.availableAnimations.length > 0) {
+                wiz.animationName = wiz.availableAnimations[0];
+                wiz.play();
+            }
+        });
+    </script>
+
+</body>
+</html>

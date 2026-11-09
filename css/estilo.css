@@ -1,0 +1,127 @@
+@charset "UTF-8";
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #F3E8FF;
+    color: #0F0A1A;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header, footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #240046;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #5B21B6;
+    gap: 40px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+main {
+    flex: 1;
+}
+#content {
+    display: flex;
+    gap: 20px;
+}
+section {
+    flex: 3;
+    background: #0F0A1A;
+    color: #F3E8FF;
+    padding: 20px;
+    border-radius: 8px;
+}
+aside {
+    flex: 1;
+    background: #3B0764;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: right;
+}
+aside a {
+    color: #DDD6FE;
+}
+@media (max-width: 768px) {
+    #content {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+footer {
+    margin-top: auto;
+}
+
+header img {
+    position: absolute;
+    left: 20px;
+}
+nav a {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #7C3AED;
+}
+
+nav a.active {
+    background-color: #3B0764;
+    color: white;
+}
+
+/* Diseño de las páginas interiores */
+.contenido-pagina {
+    padding: 25px;
+    margin: 20px;
+    background-color: #0F0A1A;
+    color: #F3E8FF;
+    border-radius: 8px;
+}
+
+.contenido-pagina h2 {
+    color: #DDD6FE;
+}
+
+/* Formulario de contacto */
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 10px;
+    border: 1px solid #A78BFA;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.formulario-contacto button {
+    padding: 12px;
+    background-color: #5B21B6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: #7C3AED;
+}
