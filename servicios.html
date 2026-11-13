@@ -18,25 +18,29 @@
 <body>
 
     <header>
-        <img src="iconos/LOGO.jpeg"
+        <img src="iconos/logo1.png"
              alt="Logo WITCH ESSENCE"
-             width="80"
-             height="100">
+             class="logo">
 
-        <h1>WITCH ESSENCE</h1>
-        <p>El arte de elegir tu esencia</p>
+        <div class="titulo-empresa">
+            <h1>WITCH ESSENCE</h1>
+            <p>El arte de elegir tu esencia</p>
+        </div>
     </header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="productos.html">Productos</a>
-        <a href="servicios.html" class="active">Servicios</a>
-        <a href="contactos.html">Contactos</a>
+    <nav aria-label="Menú principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="servicios.html" class="active">Servicios</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+        </ul>
     </nav>
 
     <main class="pagina-servicios">
 
         <section class="presentacion-servicios">
+
             <p class="subtitulo">EXPERIENCIA Y ELEGANCIA</p>
 
             <h2>Nuestros servicios</h2>
@@ -45,6 +49,7 @@
                 En WITCH ESSENCE te ayudamos a encontrar
                 la fragancia ideal para cada ocasión.
             </p>
+
         </section>
 
         <section class="seccion-wiz">
@@ -89,50 +94,46 @@
 
         </section>
 
-        <section class="lista-servicios" id="lista-servicios">
-
-            <article class="tarjeta-servicio">
-                <img src="imagenes/Asesoria.png"
-                     alt="Colección de perfumes para asesoría">
-
-                <h3>Asesoría en fragancias</h3>
-
-                <p>
-                    Te ayudamos a elegir perfumes según
-                    tus gustos y preferencias.
-                </p>
-            </article>
-
-            <article class="tarjeta-servicio">
-                <img src="imagenes/Regalo.png"
-                     alt="Perfume para regalo">
-
-                <h3>Regalos especiales</h3>
-
-                <p>
-                    Encuentra perfumes para sorprender
-                    a esa persona especial.
-                </p>
-            </article>
-
-            <article class="tarjeta-servicio">
-                <img src="iconos/perfume.png"
-                     alt="Ilustración de un perfume">
-
-                <h3>Recomendación de fragancias</h3>
-
-                <p>
-                    Descubre aromas para acompañarte
-                    en tus momentos especiales.
-                </p>
-            </article>
-
-        </section>
-
     </main>
 
     <footer>
+
+        <h3>Síguenos en nuestras redes sociales</h3>
+
+        <div class="redes-sociales">
+
+            <a href="https://www.facebook.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Facebook">
+                <img src="iconos/facebook2.png"
+                     alt="Facebook">
+            </a>
+
+            <a href="https://www.instagram.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Instagram">
+                <img src="iconos/instagram2.png"
+                     alt="Instagram">
+            </a>
+
+            <a href="https://www.tiktok.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="TikTok">
+                <img src="iconos/tiktok2.png"
+                     alt="TikTok">
+            </a>
+
+        </div>
+
         <p>&copy; 2026 Diego Suntaxi</p>
+
+        <p class="actualizacion">
+            Última actualización: ----
+        </p>
+
     </footer>
 
     <script>
